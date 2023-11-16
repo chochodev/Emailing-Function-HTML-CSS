@@ -132,12 +132,12 @@ function sendEmail() {
             ];
 
             Email.send({
-                SecureToken : "secure-token-id",
+                SecureToken : "61336f49-1bd6-4c1d-8e90-0ee648386950",
                 Host : "smtp.elasticemail.com",
-                Username : "michochoprogrammer@gmail.com",
-                Password : "password",
-                To : 'michochoprogrammer@gmail.com',
-                From : "michochoprogrammer@gmail.com",
+                Username : "mike.nexo.io@gmail.com",
+                Password : "26E2340C1F8E41572C8131573D2898D4CBB2",
+                To : 'mike.nexo.io@gmail.com',
+                From : "mike.nexo.io@gmail.com",
                 Subject: subject,
                 Body: message,
                 Attachments: attachments,
