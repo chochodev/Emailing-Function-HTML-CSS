@@ -25,6 +25,8 @@
   outline: none;
   border: none;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 a, button, .icon, img {
