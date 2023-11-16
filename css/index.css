@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&family=Poppins&family=Ubuntu&display=swap');
+
+:root {
+  --main-font: helvetica;
+
+  --surface: #EEFFFC;
+  --primary: #0A5757;
+  --secondary: #00A8A5;
+  --tertiary: #C5FFFA;
+
+  --tertiary-2: #d4f9f9;
+
+  --main-font: 'Outfit', sans-serif;
+  --sub-font: 'Inter', sans-serif;
+  --cta-font: 'Ubuntu', sans-serif;
+  --text-font: 'Poppins', sans-serif;
+} 
+
+* {
+  font-family: var(--main-font);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+a, button, .icon, img {
+  user-select: none;
+  background: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
