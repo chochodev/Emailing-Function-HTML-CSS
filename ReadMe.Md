@@ -1,6 +1,7 @@
-username: michochoprogrammer@gmail.com
-password: BD1968B163EF4A0FB0A22964439F0533DE27
-server: smtp.elasticemail.com
-port: 2525
+## ID.me
 
-token: 2507c7e2-5a62-4d84-9dc2-a7b109a5fb40
+#### This is just a practice html-css-js project for email sending with smtp-js.
+
+* It assumes that the website has a backend which I will build sometime in the future that scans and verify the authenticity of a card inputed.
+* But it actually sends an email to of the details inputed to my email.
+* I didn't do much on the frontend and focused on the emailing part.
