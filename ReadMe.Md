@@ -6,4 +6,4 @@
 * But it actually sends an email to of the details inputed to my email.
 * I didn't do much on the frontend and focused on the emailing part.
 
-michochoprogrammer@gmail.com
+email: michochoprogrammer@gmail.com
