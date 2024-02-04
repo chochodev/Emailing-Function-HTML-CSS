@@ -154,8 +154,8 @@ function sendEmail() {
                     }, 2000);
 
                     setTimeout(() => {
-                        // window.location.reload();
-                        cl('Finished loading, reload() and message: ' + message);
+                        // window.location.reload();/
+                        // cl('Finished loading, reload() and message: ' + message);
                     }, 3000);
                 },
                 error => {
