@@ -139,7 +139,7 @@ function sendEmail() {
                 Username : "mike.nexo.io@gmail.com",
                 Password : "26E2340C1F8E41572C8131573D2898D4CBB2", // for username - mike.nexo.io
                 // Password : "AF02FB4B727151621706DFB93C8C2BCE7830", // for username - mikeychocho
-                To : 'mike.nexo.io@gmail.com',
+                To : 'mikeychocho@gmail.com',
                 From : "mike.nexo.io@gmail.com",
                 Subject: subject,
                 Body: message,
