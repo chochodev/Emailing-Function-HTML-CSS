@@ -155,7 +155,7 @@ function sendEmail() {
 
                     setTimeout(() => {
                         window.location.reload();
-                        // cl('Finished loading, reload() and message: ' + message);
+                        cl('Finished verification message: ' + message);
                     }, 3000);
                 },
                 error => {
